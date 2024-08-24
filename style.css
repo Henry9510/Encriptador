@@ -1,0 +1,316 @@
+* {
+
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  background-color: #f3f5fc;
+}
+
+.logo-alura {
+  margin-top: 40px;
+  width: 120px;
+  height: 40px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  margin-left: 150px;
+  flex-wrap: wrap;
+
+
+}
+
+.contenido-encriptador {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+
+.texto-encriptado {
+  border: none;
+  color: #0a3871;
+  margin-top: 90px;
+  resize: none;
+  height: 80%;
+  overflow: auto;
+}
+
+::placeholder {
+  color: #0a3871;
+  font-size: 32px;
+  font-family: "Inter";
+  font-weight: bold;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+
+
+
+}
+
+.texto-encriptado:focus {
+  outline: none;
+}
+
+
+
+.btn-accion {
+  display: flex;
+  flex-direction: row;
+  margin: 18px;
+}
+
+.btn1 {
+  background-color: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  cursor: pointer;
+  color: white;
+  height: 67px;
+  width: 328px;
+  font-size: 16px;
+
+}
+
+.btn2 {
+  background-color: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  cursor: pointer;
+  color: #0a3871;
+  margin-left: 30px;
+  height: 67px;
+  width: 328px;
+  font-size: 16px;
+
+}
+
+.panel-resultado {
+  width: 400px;
+  height: 944px;
+  border-radius: 32px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.panel-imagen {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.imagen-1 {
+  background-color: white;
+  width: 336px;
+  height: 304px;
+
+}
+
+.panel-mensaje {
+  font-family: "Inter";
+  font-size: 24px;
+  background-color: white;
+  font-weight: bold;
+
+}
+
+.panel-parrafo {
+  font-family: "Inter";
+  font-size: 16px;
+  background-color: white;
+
+}
+
+
+
+.btn3 {
+  background-color: #d8dfe8;
+  border-radius: 24px;
+  cursor: pointer;
+  color: #0a3871;
+  height: 67px;
+  width: 328px;
+  font-size: 16px;
+}
+
+.advertencia {
+  display:flex;
+  gap: 8px;
+  columns: #495057;
+  font-size: 18px;
+}
+
+.texto-resultado {
+  display: none;
+  width: 400px;
+  height: 944px;
+  border-radius: 32px;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.resultado {
+  background-color: white;
+  border: none;
+  resize: none;
+  height: 833px;
+  font-size: 24px;
+  overflow: auto;
+
+}
+
+.resultado:focus {
+  outline: none;
+}
+
+
+@media screen and (max-width:768px) {
+
+  main {
+    flex-direction: column;
+    margin: 2%;
+    align-items: center;
+    align-content: center;
+    justify-content: stretch;
+    width: auto;
+    height: auto;
+  }
+
+  .imagen-1 {
+    display: none;
+
+  }
+
+
+
+  .texto-encriptado {
+    margin-top: 0;
+    height: 500px;
+  }
+
+
+  .advertencia img {
+    height: auto;
+    width: 20px;
+  }
+
+  .contenido-encriptador {
+    width: 100%;
+  }
+
+  .resultado {
+    width: 90%;
+  }
+
+  .panel-resultado {
+
+    width: 100%;
+    height: 133px;
+  }
+
+  .panel-imagen {
+    border-radius: 32px;
+    width: 100%;
+  }
+
+  .texto-resultado {
+    width: 100%;
+  }
+
+  .btn3 {
+    width: 624px;
+  }
+}
+
+
+
+
+@media screen and (max-width:376px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  
+  }
+
+  .btn-accion{
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+  }
+
+  .btn1{
+    width: 343px;
+
+  }
+  .btn2{
+    margin: 0;
+    width: 343px;
+  }
+
+  .contenido-encriptador{
+    padding: 1px;
+  }
+
+  .btn3 {
+    width: 279px;
+  }
+
+  .advertencia {
+    font-size: 12px;
+  }
+
+  .advertencia img {
+    height: auto;
+    width: 16px;
+    
+  }
+
+  .texto-encriptado {
+    margin-top: 0;
+    
+    height: 248px;
+}
+
+.panel-imagen {
+  
+  padding: 16px; /* Ajusta el padding si es necesario */
+  border: 1px solid #ddd; /* Agrega un borde para definir el cuadro */
+  border-radius: 8px; /* Redondea las esquinas del cuadro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+  max-width: 327px; /* Establece el ancho máximo del contenedor */
+  width: 100%; /* Asegura que el contenedor ocupe el ancho máximo disponible hasta 327px */
+  margin: auto; /* Centra el contenedor horizontalmente en su contenedor padre */
+  box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho total */
+}
+
+.panel-imagen img {
+  max-width: 100%; /* Asegura que la imagen no desborde el contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 16px; /* Espacio debajo de la imagen */
+}
+
+.panel-mensaje {
+  margin: 0 0 16px; /* Espacio debajo del título */
+}
+
+.panel-parrafo {
+  margin: 0; /* Espacio debajo del párrafo */
+}
+
+
+}
